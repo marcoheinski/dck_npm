@@ -1,1 +1,1 @@
-# Nginx Proxy Reverse Manager by 
+# Nginx Proxy Reverse Manager by JC21
