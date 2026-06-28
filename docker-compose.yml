@@ -20,6 +20,8 @@ services:
     volumes:
       - data_core:/data
       - letsencrypt:/etc/letsencrypt
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       - db
 
