@@ -21,7 +21,7 @@ services:
       - data_core:/data
       - letsencrypt:/etc/letsencrypt
     networks:
-      - rede-nginx-proxy
+      - rede_nginx_proxy
     depends_on:
       - db
 
@@ -36,7 +36,7 @@ services:
     volumes:
       - data_mysql:/var/lib/mysql
     networks:
-      - rede-nginx-proxy
+      - rede_nginx_proxy
 
 volumes:
   data_core:
@@ -44,5 +44,5 @@ volumes:
   data_mysql:
 
 networks:
-  rede-nginx-proxy:
+  rede_nginx_proxy:
     external: true
