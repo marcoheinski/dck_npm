@@ -46,3 +46,4 @@ volumes:
 networks:
   rede-nginx-proxy:
     driver: bridge
+    external: true
