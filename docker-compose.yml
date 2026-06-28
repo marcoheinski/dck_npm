@@ -20,8 +20,6 @@ services:
     volumes:
       - data_core:/data
       - letsencrypt:/etc/letsencrypt
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     depends_on:
       - db
 
@@ -42,5 +40,5 @@ volumes:
   data_mysql:
 
 networks:
-  dck_npm:
+  rede-nginx-proxy:
     driver: bridge
