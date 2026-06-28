@@ -20,6 +20,8 @@ services:
     volumes:
       - data_core:/data
       - letsencrypt:/etc/letsencrypt
+    networks:
+      - rede-nginx-proxy
     depends_on:
       - db
 
@@ -33,6 +35,8 @@ services:
       MYSQL_PASSWORD: 'npm!password'
     volumes:
       - data_mysql:/var/lib/mysql
+    networks:
+      - rede-nginx-proxy
 
 volumes:
   data_core:
